@@ -10,6 +10,7 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "faker": "^4.1.0",
+    "material-ui-search-bar": "^0.4.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.0",
