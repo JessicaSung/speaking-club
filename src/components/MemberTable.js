@@ -91,7 +91,7 @@ const styles = theme => ({
 class MemberTable extends Component {
   state = {
     order: 'asc',
-    orderBy: 'calories'
+    orderBy: 'name'
   };
 
   handleRequestSort = (event, property) => {
