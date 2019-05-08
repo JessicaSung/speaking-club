@@ -36,6 +36,8 @@ const columnNames = [
 
 class MemberTableHead extends Component {
   createSortHandler = property => event => {
+    event.preventDefault();
+
     this.props.onRequestSort(event, property);
   };
 
