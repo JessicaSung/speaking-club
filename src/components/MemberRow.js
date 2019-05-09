@@ -47,7 +47,18 @@ const paths = [
   }
 ];
 
-const randomPath = paths[Math.floor(Math.random() * paths.length)].name;
+const randomPath = () => paths[Math.floor(Math.random() * paths.length)].name;
+
+const memberPaths = () => {
+  const numberOfPaths = Math.floor(Math.random() * 3) + 1,
+    paths = new Set();
+
+  for (let i = 0; i < numberOfPaths; i++) {
+    paths.add(randomPath());
+  }
+
+  return [...paths].sort().join(', ');
+};
 
 const MemberRow = () => {
   return (
@@ -55,7 +66,7 @@ const MemberRow = () => {
       <TableCell>
         {faker.fake('{{name.firstName}} {{name.lastName}}')}
       </TableCell>
-      <TableCell>{randomPath}</TableCell>
+      <TableCell>{memberPaths()}</TableCell>
       <TableCell>{faker.internet.email()}</TableCell>
       <TableCell>{faker.phone.phoneNumberFormat()}</TableCell>
     </TableRow>
