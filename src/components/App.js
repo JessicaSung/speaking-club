@@ -19,6 +19,8 @@ class App extends Component {
   state = { query: '', column: 'name' };
 
   handleChange = name => event => {
+    event.preventDefault();
+
     this.setState({
       [name]: event.target.value
     });
@@ -35,13 +37,13 @@ class App extends Component {
           type="search"
           margin="normal"
           value={this.state.query}
-          onChange={this.handleChange}
+          onChange={this.handleChange('query')}
         />
         <Select
           style={{ marginTop: '32px' }}
           name="column"
           value={this.state.column}
-          onChange={this.handleChange}
+          onChange={this.handleChange('column')}
           input={<Input name="column" id="filter-member" />}
         >
           <MenuItem value="name">Name</MenuItem>
