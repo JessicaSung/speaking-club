@@ -47,8 +47,10 @@ const paths = [
   }
 ];
 
+// select single path randomly
 const randomPath = () => paths[Math.floor(Math.random() * paths.length)].name;
 
+// 1-3 random paths for each member
 const memberPaths = () => {
   const numberOfPaths = Math.floor(Math.random() * 3) + 1,
     paths = new Set();
