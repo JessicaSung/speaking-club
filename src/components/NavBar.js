@@ -65,7 +65,7 @@ class NavBar extends Component {
                 <MenuItem>Dashboard</MenuItem>
               </Link>
               <Link to="/editdash" onClick={this.handleClose}>
-                <MenuItem>Edit dashboard</MenuItem>
+                <MenuItem>Edit profile</MenuItem>
               </Link>
               <Link to="/members" onClick={this.handleClose}>
                 <MenuItem>View members</MenuItem>
@@ -76,7 +76,7 @@ class NavBar extends Component {
               color="inherit"
               className={classes.flex}
             >
-              Home
+              Central Austin Toastmasters
             </Typography>
             <Button color="inherit">Login</Button>
           </Toolbar>
