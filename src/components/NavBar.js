@@ -58,17 +58,17 @@ class NavBar extends Component {
               open={Boolean(anchorEl)}
               onClose={this.handleClose}
             >
-              <Link to="/">
-                <MenuItem onClick={this.handleSelect}>Home</MenuItem>
+              <Link to="/" onClick={this.handleClose}>
+                <MenuItem>Home</MenuItem>
               </Link>
-              <Link to="/dashboard">
-                <MenuItem onClick={this.handleSelect}>Dashboard</MenuItem>
+              <Link to="/dashboard" onClick={this.handleClose}>
+                <MenuItem>Dashboard</MenuItem>
               </Link>
-              <Link to="/editdash">
-                <MenuItem onClick={this.handleSelect}>Edit dashboard</MenuItem>
+              <Link to="/editdash" onClick={this.handleClose}>
+                <MenuItem>Edit dashboard</MenuItem>
               </Link>
-              <Link to="/members">
-                <MenuItem onClick={this.handleSelect}>View members</MenuItem>
+              <Link to="/members" onClick={this.handleClose}>
+                <MenuItem>View members</MenuItem>
               </Link>
             </Menu>
             <Typography
