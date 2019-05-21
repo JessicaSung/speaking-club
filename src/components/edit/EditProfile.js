@@ -117,6 +117,43 @@ function EditProfile(props) {
         <Grid item xs={12}>
           <Paper className={classes.paper}>Recent Activities</Paper>
           {/*<Paper className={classes.paper}>(member timeline)</Paper>*/}
+          {/* column 1 of recent activities */}
+        </Grid>
+      </Grid>
+      <Grid container spacing={0}>
+        <Grid item xs>
+          <Paper className={classes.paper}>{pastDate()}</Paper>
+          <Paper className={classes.paper}>{pastDate()}</Paper>
+          <Paper className={classes.paper}>{pastDate()}</Paper>
+          <Paper className={classes.paper}>{pastDate()}</Paper>
+          <Paper className={classes.paper}>{pastDate()}</Paper>
+          <Paper className={classes.paper}>{pastDate()}</Paper>
+          <Paper className={classes.paper}>{pastDate()}</Paper>
+        </Grid>
+        {/* column 2 of recent activities */}
+        <Grid item xs>
+          <Paper className={classes.paper}>Toastmaster</Paper>
+          <Paper className={classes.paper}>Evaluator</Paper>
+          <Paper className={classes.paper}>PM1, Research and Planning</Paper>
+          <Paper className={classes.paper}>
+            PM1, Evaluation and Feedback (Part 2)
+          </Paper>
+          <Paper className={classes.paper}>
+            PM1, Evaluation and Feedback (Part 3)
+          </Paper>
+          <Paper className={classes.paper}>Grammarian</Paper>
+          <Paper className={classes.paper}>
+            PM1, Evaluation and Feedback (Part 1)
+          </Paper>
+        </Grid>
+        <Grid item xs>
+          <Paper className={classes.paper}>Edit / Delete</Paper>
+          <Paper className={classes.paper}>Edit / Delete</Paper>
+          <Paper className={classes.paper}>-</Paper>
+          <Paper className={classes.paper}>-</Paper>
+          <Paper className={classes.paper}>-</Paper>
+          <Paper className={classes.paper}>Edit / Delete</Paper>
+          <Paper className={classes.paper}>-</Paper>
         </Grid>
       </Grid>
     </div>
