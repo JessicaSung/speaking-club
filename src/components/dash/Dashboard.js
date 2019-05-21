@@ -10,7 +10,7 @@ const styles = theme => ({
     flexGrow: 1
   },
   paper: {
-    padding: theme.spacing.unit * 2,
+    padding: theme.spacing(2),
     textAlign: 'left',
     color: theme.palette.text.secondary
   }
@@ -18,7 +18,7 @@ const styles = theme => ({
 
 const pastDate = () => String(faker.date.past()).slice(4, 15);
 
-function Dashboard(props) {
+const Dashboard = props => {
   const { classes } = props;
 
   return (
@@ -41,7 +41,7 @@ function Dashboard(props) {
           </Paper>
         </Grid>
       </Grid>
-      {/*Beginning of second section*/}
+      {/*Beginning of second section header*/}
       <Grid container spacing={40}>
         <Grid item xs>
           <Paper className={classes.paper}>Presentation Mastery</Paper>
@@ -52,6 +52,7 @@ function Dashboard(props) {
           </Paper>
         </Grid>
       </Grid>
+      {/*Beginning of second section body*/}
       <Grid container spacing={40}>
         <Grid item xs>
           <Paper className={classes.paper}>
@@ -85,7 +86,7 @@ function Dashboard(props) {
       </Grid>
     </div>
   );
-}
+};
 
 Dashboard.propTypes = {
   classes: PropTypes.object.isRequired

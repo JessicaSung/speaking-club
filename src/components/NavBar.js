@@ -64,18 +64,14 @@ class NavBar extends Component {
               <Link to="/dashboard" onClick={this.handleClose}>
                 <MenuItem>Dashboard</MenuItem>
               </Link>
-              <Link to="/editdash" onClick={this.handleClose}>
+              <Link to="/edit" onClick={this.handleClose}>
                 <MenuItem>Edit profile</MenuItem>
               </Link>
               <Link to="/members" onClick={this.handleClose}>
                 <MenuItem>View members</MenuItem>
               </Link>
             </Menu>
-            <Typography
-              variant="title"
-              color="inherit"
-              className={classes.flex}
-            >
+            <Typography color="inherit" className={classes.flex}>
               Central Austin Toastmasters
             </Typography>
             <Button color="inherit">Login</Button>
