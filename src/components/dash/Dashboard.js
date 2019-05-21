@@ -41,7 +41,7 @@ function Dashboard(props) {
           </Paper>
         </Grid>
       </Grid>
-      {/*Beginning of second section*/}
+      {/*Beginning of second section header*/}
       <Grid container spacing={40}>
         <Grid item xs>
           <Paper className={classes.paper}>Presentation Mastery</Paper>
@@ -52,6 +52,7 @@ function Dashboard(props) {
           </Paper>
         </Grid>
       </Grid>
+      {/*Beginning of second section body*/}
       <Grid container spacing={40}>
         <Grid item xs>
           <Paper className={classes.paper}>

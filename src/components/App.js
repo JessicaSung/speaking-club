@@ -1,8 +1,9 @@
 import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
+import { Container } from '@material-ui/core';
 
 import Dashboard from './dash/Dashboard';
-import Editdash from './edit/Editdash';
+import EditProfile from './edit/EditProfile';
 import Member from './members/Member';
 import NavBar from './NavBar';
 import Welcome from './Welcome';
@@ -13,10 +14,12 @@ const App = () => {
       <HashRouter>
         <div>
           <NavBar />
-          <Route path="/" exact component={Welcome} />
-          <Route path="/dashboard" component={Dashboard} />
-          <Route path="/editdash" component={Editdash} />
-          <Route path="/members" component={Member} />
+          <Container>
+            <Route path="/" exact component={Welcome} />
+            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/edit" component={EditProfile} />
+            <Route path="/members" component={Member} />
+          </Container>
         </div>
       </HashRouter>
     </div>
