@@ -72,7 +72,7 @@ class NavBar extends Component {
               </Link>
             </Menu>
             <Typography color="inherit" className={classes.flex}>
-              Central Austin Toastmasters
+              Central Austin Speaking Club
             </Typography>
             <Button color="inherit">Login</Button>
           </Toolbar>

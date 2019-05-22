@@ -31,7 +31,11 @@ class EditProfile extends Component {
         <Grid container spacing={0}>
           <Grid item xs>
             <Paper className={classes.paper}>
-              <Textfield id="tid" label="TID" placeholder="Toastmasters ID" />
+              <Textfield
+                id="scid"
+                label="SCID"
+                placeholder="Speaking Club ID"
+              />
               <Textfield id="name" label="Name" placeholder="" />
               <Textfield
                 id="email"
@@ -109,7 +113,7 @@ class EditProfile extends Component {
           </Grid>
           {/* column 2 of recent activities */}
           <Grid item xs>
-            <Paper className={classes.paper}>Toastmaster</Paper>
+            <Paper className={classes.paper}>Meeting Leader</Paper>
             <Paper className={classes.paper}>Evaluator</Paper>
             <Paper className={classes.paper}>PM1, Research and Planning</Paper>
             <Paper className={classes.paper}>
