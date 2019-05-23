@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/speaking-club/precache-manifest.159e68125e4346a32b1c8fa7fef3c8c1.js"
+  "/speaking-club/precache-manifest.4ee578f46339fefb18c2f664bad51295.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8bf0d23293eee668260de583c4a4f3cb",
+    "revision": "8d50c3d49e04d619dad021ff2ecff6e9",
     "url": "/speaking-club/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/speaking-club/static/js/2.973322cd.chunk.js"
   },
   {
-    "revision": "4a478c64233945e76524",
-    "url": "/speaking-club/static/js/main.d423ee89.chunk.js"
+    "revision": "d58cb13dbe201f918cb7",
+    "url": "/speaking-club/static/js/main.91f9aeda.chunk.js"
   },
   {
     "revision": "4dc362857a6d7cbce967",
