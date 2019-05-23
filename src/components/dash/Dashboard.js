@@ -23,7 +23,7 @@ const Dashboard = props => {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={40}>
+      <Grid container spacing={0}>
         <Grid item xs>
           <Paper className={classes.paper}>
             Name: {faker.fake('{{name.firstName}} {{name.lastName}}')}
@@ -41,8 +41,17 @@ const Dashboard = props => {
           </Paper>
         </Grid>
       </Grid>
+
+      {/* spacing between sections */}
+      <Grid container spacing={10}>
+        <Grid item xs />
+      </Grid>
+      <Grid container spacing={10}>
+        <Grid item xs />
+      </Grid>
+
       {/*Beginning of second section header*/}
-      <Grid container spacing={40}>
+      <Grid container spacing={0}>
         <Grid item xs>
           <Paper className={classes.paper}>Presentation Mastery</Paper>
         </Grid>
@@ -53,7 +62,7 @@ const Dashboard = props => {
         </Grid>
       </Grid>
       {/*Beginning of second section body*/}
-      <Grid container spacing={40}>
+      <Grid container spacing={10}>
         <Grid item xs>
           <Paper className={classes.paper}>
             Level 1 <br />
@@ -77,8 +86,9 @@ const Dashboard = props => {
           </Paper>
         </Grid>
       </Grid>
+
       {/*Beginning of third section*/}
-      <Grid container spacing={40}>
+      <Grid container spacing={10}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>Recent Activities</Paper>
           {/*<Paper className={classes.paper}>(member timeline)</Paper>*/}
