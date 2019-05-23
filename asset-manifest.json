@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/speaking-club/static/js/main.d423ee89.chunk.js",
+    "main.js.map": "/speaking-club/static/js/main.d423ee89.chunk.js.map",
+    "runtime~main.js": "/speaking-club/static/js/runtime~main.1697ff48.js",
+    "runtime~main.js.map": "/speaking-club/static/js/runtime~main.1697ff48.js.map",
+    "static/js/2.973322cd.chunk.js": "/speaking-club/static/js/2.973322cd.chunk.js",
+    "static/js/2.973322cd.chunk.js.map": "/speaking-club/static/js/2.973322cd.chunk.js.map",
+    "index.html": "/speaking-club/index.html",
+    "precache-manifest.159e68125e4346a32b1c8fa7fef3c8c1.js": "/speaking-club/precache-manifest.159e68125e4346a32b1c8fa7fef3c8c1.js",
+    "service-worker.js": "/speaking-club/service-worker.js"
+  }
+}
