@@ -20,7 +20,7 @@ const Welcome = props => {
     <div className={`${classes.headerText} ${classes.root}`}>
       <Image
         style={{ margin: 'auto' }}
-        src="/images/cover.jpg"
+        src={process.env.PUBLIC_URL + '/images/cover.jpg'}
         height={500}
         width={500}
       />
